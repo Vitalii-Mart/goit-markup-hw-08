@@ -2,36 +2,49 @@
     margin-left: auto;
     margin-right: auto;
 
+    padding-top: 118px;
+    padding-bottom: 118px;
+    max-width: 480px;
+    height: 400px;
+
+    @media screen and (min-width: 768px) {
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
     height: 600px;
+    }
+
+
+    // padding-top: 200px;
+    // padding-bottom: 200px;
+    // max-width: 1600px;
+    // height: 600px;
 
     text-align: center;
 
-    background-image:linear-gradient( to right,rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),  url(../images/Hero.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    // background-image:linear-gradient( to right,rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),  url(../images/Hero.jpg);
+    // background-repeat: no-repeat;
+    // background-position: center;
     background-color: var(--hero-bg); 
 }
-.hero__slogan{
-    width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+// .hero__slogan{
+//     width: 700px;
+//     margin-left: auto;
+//     margin-right: auto;
 
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin-bottom: 30px;
+//     font-weight: 900;
+//     font-size: 44px;
+//     line-height: 1.36;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+//     margin-bottom: 30px;
 
-    color: var(--primary-wite-color);
-}
+//     color: var(--primary-wite-color);
+// }
 .hero__button{
-    min-width: 216px;
+    min-width: 200px;
     height: 50px;
-    padding: 10px 32px;
+    padding: 10px 24px;
 
     font-family: inherit;
     font-weight: 700;
@@ -44,13 +57,19 @@
     border-radius: 4px;
     color: var(--primary-wite-color);
     background-color: var(--accent-color);
-   
+        
     cursor: pointer;
-
+        
     transition: background-color 250ms var(--timing-function);
-
-        &:hover,
-        &:focus{
-            background-color:var(--button-hover-bg)
-        }
+        
+    &:hover,
+    &:focus{
+    background-color:var(--button-hover-bg)
     }
+
+    @media screen and (min-width: 1200px){
+    min-width: 216px;
+    padding: 10px 32px;
+    }
+    }
+

@@ -1,17 +1,23 @@
 .clients{
     @include section;
+    
+    @media screen and (min-width: 1200px) {
+    @include section($pt: 94px, $pb: 94px)
+    }
 }
 .clients__list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+gap: 30px;
 }
 .clients__link{
 display: flex;
 justify-content: center;
 align-items: center;
 
-width: 170px;
+width: 210px;
 height: 92px;
 
 border: 1px solid ;
@@ -19,13 +25,18 @@ border-radius: 4px;
 color: var(--icon-collor);
 transition: color 250ms var(--timing-function);
 
+@media screen and (min-width: 768px) {
+    width: 226px;
+}
+
+@media screen and (min-width: 1200px) {
+    width: 170px;
+}
+
 &:hover,
 &:focus{
 color: var(--accent-color);
 }
-}
-.clients__items:not(:last-child) {
-margin-right: 30px;
 }
 .clients__icon{
 fill: currentColor;

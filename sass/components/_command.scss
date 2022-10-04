@@ -1,24 +1,58 @@
 .command{
     @include section;
     background-color: var(--secondary-bg-color);
+
+    @media screen and (min-width: 1200px) {
+    @include section($pt: 94px, $pb: 94px)
+    }
 }
 .command__list{
-    display: flex;
-    justify-content:space-between;
+display: flex;
+  
+    @media screen and (max-width: 1199px){
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    }
+
+    @media screen and (min-width: 1200px){
+    justify-content: space-between;
+    }
 }
 .command__items{
-    width: 270px;
-    height: 428px;
+    width: 450px;
+    height: 622px;
+
     background-color: var(--primary-wite-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px;
 
-    &:not(:last-child) {
-    margin-right: 30px;
+
+    @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 536px;
         }
+    
+    @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 428px;
+
+     &:not(:last-child) {
+    margin-right: 30px;
+    }
+     }
 }
 .command__box{
-    padding:30px 32px;
+padding: 30px 122px 24px;
+
+@media screen and (min-width: 768px){
+   padding: 30px 74px 24px;
+}
+@media screen and (min-width: 1200px){
+    padding: 30px 32px;
+}
+    
 }
 .command__caption{
     margin-bottom: 10px;

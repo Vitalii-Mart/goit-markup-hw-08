@@ -1,16 +1,41 @@
 .peculiarities{
     @include section;
+    
+    @media screen and (min-width: 1200px) {
+    @include section($pt: 94px, $pb: 94px)
+    }
 }
 .peculiarities__list{
+@media screen and (min-width: 768px) and (max-width: 1199px){
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+
+}
+    @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: space-between;
+        }
+
 }
 .peculiarities__items{
-    width: 270px;
-
-    &:not(:last-child) {
-     margin-right: 30px;
+    @media screen and (max-width: 767px) {
+        max-width: 450px;
+         &:not(:last-child) {
+          margin-bottom: 30px;
+         }
     }
+   
+     @media screen and (min-width: 768px) {
+     width: 354px;
+     }
+    
+     @media screen and (min-width: 1200px) {
+    width: 270px;
+        &:not(:last-child) {
+         margin-right: 30px;
+        }
+     }
 }
 .peculiarities__box{
     display: flex;
@@ -30,6 +55,10 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--title-text-color);
+
+    @media screen and (max-width: 767px) {
+            text-align: center;
+        }
 }
 .peculiarities__text{
     font-size: 14px;
