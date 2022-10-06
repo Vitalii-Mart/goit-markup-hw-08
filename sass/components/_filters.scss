@@ -1,13 +1,36 @@
 .filters{
     @include section;
+    
+    @media screen and (min-width: 1200px) {
+    @include section($pt: 94px, $pb: 94px)
+    }
 }
 .filters__list{
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+
+@media screen and (max-width: 767px){
+    flex-wrap: wrap;
+    max-width: 327px;
+    height: 91px;
+    margin-bottom: 40px;
+    gap: 8px;
+}
+
+@media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
+    
 }
 .filters__items:not(:last-child) {
+    @media screen and (min-width: 768px) {
     margin-right: 8px;
+        }
+
    
 }
 .filters__btn{

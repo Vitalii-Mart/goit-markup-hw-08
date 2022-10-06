@@ -4,43 +4,69 @@
 
     padding-top: 118px;
     padding-bottom: 118px;
-    max-width: 480px;
-    height: 400px;
+    max-width: 1600px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
-    max-width: 1600px;
-    height: 600px;
     }
-
-
-    // padding-top: 200px;
-    // padding-bottom: 200px;
-    // max-width: 1600px;
-    // height: 600px;
 
     text-align: center;
 
-    // background-image:linear-gradient( to right,rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),  url(../images/Hero.jpg);
-    // background-repeat: no-repeat;
-    // background-position: center;
+    background-image:linear-gradient( to right,rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),  url(../images/hero/Header_s-@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: var(--hero-bg); 
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Header_s-@2x.jpg);
+    }
+
+@media screen and (min-width: 481px )  {
+    background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Header_m-@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Header_m-@2x.jpg);
+    }
 }
-// .hero__slogan{
-//     width: 700px;
-//     margin-left: auto;
-//     margin-right: auto;
 
-//     font-weight: 900;
-//     font-size: 44px;
-//     line-height: 1.36;
-//     letter-spacing: 0.06em;
-//     text-transform: uppercase;
-//     margin-bottom: 30px;
+@media screen and (min-width: 769px) {
+    background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Header_L-@1x.jpg);
 
-//     color: var(--primary-wite-color);
-// }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Header_L-@2x.jpg);
+    }
+}
+
+
+}
+.hero__slogan{
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+
+    color: var(--primary-wite-color);
+
+    @media screen and (min-width: 1200px){
+    max-width: 700px;
+    font-size: 44px;
+    line-height: 1.36;
+    }
+}
 .hero__button{
     min-width: 200px;
     height: 50px;

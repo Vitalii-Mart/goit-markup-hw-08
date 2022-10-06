@@ -9,7 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -25,7 +28,9 @@
         <nav class="nav">
           <a href="./index.html" class="logo"><span class="logo__web">Web</span>Studio</a>
           <ul class="nav__list list">
-            <li class="nav__items"><a href="./index.html" class="nav__link nav__link_current">Студія</a></li>
+            <li class="nav__items"
+              ><a href="./index.html" class="nav__link nav__link_current">Студія</a></li
+            >
             <li class="nav__items"><a href="./portfolio.html" class="nav__link">Портфоліо</a></li>
             <li class="nav__items"><a href="#" class="nav__link">Контакти</a></li>
           </ul>
@@ -33,26 +38,34 @@
         <ul class="connection list">
           <li class="connection__items"
             ><a href="mailto:info@devstudio.com" class="connection__link"
-              ><svg class="connection__icons" width="16" height="12">
+              ><svg class="connection__icons_mail">
                 <use href="./images/icons.svg#envelope"></use></svg>info@devstudio.com</a
             ></li
           >
           <li class="connection__items"
             ><a href="tel:+380961111111" class="connection__link"
-              ><svg class="connection__icons" width="10" height="16">
+              ><svg class="connection__icons_tel">
                 <use href="./images/icons.svg#smartphone"></use></svg>+38 096 111 11 11</a
             ></li
           >
         </ul>
+              <button type="button" class="menu-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+       <svg class="menu-btn__icons" width="40" height="40">
+        <use href="./images/icons.svg#menu"></use>
+      </svg>
+      </button>
       </div>
+
     </header>
-    <!-- <main class="home-main">
+    <main class="home-main">
       <section class="hero">
         <div class="container">
           <h1 class="hero__slogan">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
         </div>
-      </section> -->
+      </section>
 
       <section class="peculiarities">
         <div class="container">
@@ -60,31 +73,47 @@
           <ul class="peculiarities__list list">
             <li class="peculiarities__items">
               <div class="peculiarities__box">
-                <svg class="peculiarities__icon" width="70px" height="70px"><use href="./images/icons.svg#antenna"></use></svg>
+                <svg class="peculiarities__icon" width="70px" height="70px">
+                  <use href="./images/icons.svg#antenna"></use>
+                </svg>
               </div>
               <h3 class="peculiarities__caption">Увага до деталей</h3>
-              <p class="peculiarities__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p></li
+              <p class="peculiarities__text"
+                >Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p
+              ></li
             >
             <li class="peculiarities__items">
               <div class="peculiarities__box">
-                <svg class="peculiarities__icon" width="70px" height="70px"><use href="./images/icons.svg#clock"></use></svg>
+                <svg class="peculiarities__icon" width="70px" height="70px">
+                  <use href="./images/icons.svg#clock"></use>
+                </svg>
               </div>
               <h3 class="peculiarities__caption">Пунктуальність</h3>
-              <p class="peculiarities__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p></li
+              <p class="peculiarities__text"
+                >Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p
+              ></li
             >
             <li class="peculiarities__items">
               <div class="peculiarities__box">
-                <svg class="peculiarities__icon" width="70px" height="70px"><use href="./images/icons.svg#diagram"></use></svg>
+                <svg class="peculiarities__icon" width="70px" height="70px">
+                  <use href="./images/icons.svg#diagram"></use>
+                </svg>
               </div>
               <h3 class="peculiarities__caption">Планування</h3>
-              <p class="peculiarities__text">Так само консультація з широким активом значною мірою зумовлює.</p></li
+              <p class="peculiarities__text"
+                >Так само консультація з широким активом значною мірою зумовлює.</p
+              ></li
             >
             <li class="peculiarities__items">
               <div class="peculiarities__box">
-                <svg class="peculiarities__icon" width="70px" height="70px"><use href="./images/icons.svg#astronaut"></use></svg>
+                <svg class="peculiarities__icon" width="70px" height="70px">
+                  <use href="./images/icons.svg#astronaut"></use>
+                </svg>
               </div>
               <h3 class="peculiarities__caption">Сучасні технології</h3>
-              <p class="peculiarities__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p></li
+              <p class="peculiarities__text"
+                >Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p
+              ></li
             >
           </ul>
         </div>
@@ -94,29 +123,73 @@
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="work__list list">
             <li class="work__items"
-              ><img src="./images/img.jpg" alt="людина програмую мовою html за компьютером" width="370" class="work__img" /><div class="work__box"
-                ><h3 class="work__label">Десктопні додатки</h3></div
-              ></li
+              ><img
+              srcset="./images/work/img3@1x.jpg 1x, ./images/work/img3@2x.jpg 2x"
+                src="./images/work/img3@1x.jpg"
+                alt="людина програмую мовою html за компьютером"
+                width="370"
+                class="work__img"
+              /><div class="work__box"><h3 class="work__label">Десктопні додатки</h3></div></li
             >
             <li class="work__items"
-              ><img src="./images/img-1.jpg" alt="людипна програмує панель для телефона " width="370" class="work__img" /><div class="work__box"
-                ><h3 class="work__label">Мобільні додатки</h3></div
-              ></li
+              ><img
+               srcset="./images/work/img2@1x.jpg 1x, ./images/work/img2@2x.jpg 2x"
+                src="./images/work/img2@1x.jpg"
+                alt="людипна програмує панель для телефона "
+                width="370"
+                class="work__img"
+              /><div class="work__box"><h3 class="work__label">Мобільні додатки</h3></div></li
             >
             <li class="work__items"
-              ><img src="./images/img-2.jpg" alt="людина обирає цвітову політру" width="370" class="work__img" /><div class="work__box"
-                ><h3 class="work__label">Дизайнерські рішення</h3></div
-              ></li
+              ><img
+               srcset="./images/work/img1@1x.jpg 1x, ./images/work/img1@2x.jpg 2x"
+                src="./images/work/img1@1x.jpg"
+                alt="людина обирає цвітову політру"
+                width="370"
+                class="work__img"
+              /><div class="work__box"><h3 class="work__label">Дизайнерські рішення</h3></div></li
             >
           </ul>
         </div>
       </section>
-      <!-- <section class="command">
+      <section class="command">
         <div class="container">
           <h2 class="title">Наша команда</h2>
           <ul class="command__list list">
             <li class="command__items">
-              <img src="./images/photo1.jpg" alt="фото" width="270" class="command__img" />
+              <picture>
+                <source
+                media="(min-width: 1200px)"
+                srcset="./images/command/img1_L-@1x.webp 1x, ./images/command/img1_L-@2x.webp 2x"
+                type="image/webp">
+              </source>
+                <source
+                media="(min-width: 1200px)"
+                srcset="./images/command/img1_L-@1x.jpg 1x, ./images/command/img1_L-@2x.jpg 2x"
+                type="image/jpg">
+              </source>
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/command/img1_M-@1x.webp 1x, ./images/command/img1_M-@2x.webp 2x"
+                type="image/webp">
+              </source>
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/command/img1_M-@1x.jpg 1x, ./images/command/img1_M-@2x.jpg 2x"
+                type="image/jpg">
+              </source>
+              <source
+                media="(min-width: 480px)"
+                srcset="./images/command/img1_S-@1x.webp 1x, ./images/command/img1_S-@2x.webp 2x"
+                type="image/webp">
+              </source>
+              <source
+                media="(min-width: 480px)"
+                srcset="./images/command/img1_S-@1x.jpg 1x, ./images/command/img1_S-@2x.jpg 2x"
+                type="image/jpg">
+              </source>
+               <img src="./images/command/img1_S-@1x.jpg" alt="фото" class="command__img" />
+              </picture>
               <div class="command__box"
                 ><h3 class="command__caption">Ігор Дем'яненко</h3>
                 <p class="command__text">Product Designer</p>
@@ -141,7 +214,39 @@
               </div>
             </li>
             <li class="command__items">
-              <img src="./images/photo2.jpg" alt="фото" width="270" class="command__img" />
+              <picture>
+                <source
+                media="(min-width: 1200px)"
+                srcset="./images/command/img2_L-@1x.webp 1x, ./images/command/img2_L-@2x.webp 2x"
+                type="image/webp">
+              </source>
+                <source
+                media="(min-width: 1200px)"
+                srcset="./images/command/img2_L-@1x.jpg 1x, ./images/command/img2_L-@2x.jpg 2x"
+                type="image/jpg">
+              </source>
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/command/img2_M-@1x.webp 1x, ./images/command/img2_M-@2x.webp 2x"
+                type="image/webp">
+              </source>
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/command/img2_M-@1x.jpg 1x, ./images/command/img2_M-@2x.jpg 2x"
+                type="image/jpg">
+              </source>
+              <source
+                media="(min-width: 480px)"
+                srcset="./images/command/img2_S-@1x.webp 1x, ./images/command/img2_S-@2x.webp 2x"
+                type="image/webp">
+              </source>
+              <source
+                media="(min-width: 480px)"
+                srcset="./images/command/img2_S-@1x.jpg 1x, ./images/command/img2_S-@2x.jpg 2x"
+                type="image/jpg">
+              </source>
+               <img src="./images/command/img2_S-@1x.jpg" alt="фото" class="command__img" />
+              </picture>
               <div class="command__box"
                 ><h3 class="command__caption">Ольга Рєпіна</h3> <p class="command__text">Frontend Developer</p>
                 <ul class="command-socials list">
@@ -164,7 +269,39 @@
               ></div>
             </li>
             <li class="command__items">
-              <img src="./images/photo3.jpg" alt="фото" width="270" class="command__img" />
+              <picture>
+                <source
+                media="(min-width: 1200px)"
+                srcset="./images/command/img3_L-@1x.webp 1x, ./images/command/img3_L-@2x.webp 2x"
+                type="image/webp">
+              </source>
+                <source
+                media="(min-width: 1200px)"
+                srcset="./images/command/img3_L-@1x.jpg 1x, ./images/command/img3_L-@2x.jpg 2x"
+                type="image/jpg">
+              </source>
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/command/img3_M-@1x.webp 1x, ./images/command/img3_M-@2x.webp 2x"
+                type="image/webp">
+              </source>
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/command/img3_M-@1x.jpg 1x, ./images/command/img3_M-@2x.jpg 2x"
+                type="image/jpg">
+              </source>
+              <source
+                media="(min-width: 480px)"
+                srcset="./images/command/img3_S-@1x.webp 1x, ./images/command/img3_S-@2x.webp 2x"
+                type="image/webp">
+              </source>
+              <source
+                media="(min-width: 480px)"
+                srcset="./images/command/img3_S-@1x.jpg 1x, ./images/command/img3_S-@2x.jpg 2x"
+                type="image/jpg">
+              </source>
+               <img src="./images/command/img3_S-@1x.jpg" alt="фото" class="command__img" />
+              </picture>
               <div class="command__box"
                 ><h3 class="command__caption">Микола Тарасов</h3> <p class="command__text">Marketing</p>
                 <ul class="command-socials list">
@@ -187,7 +324,39 @@
               ></div>
             </li>
             <li class="command__items">
-              <img src="./images/photo4.jpg" alt="фото" width="270" class="command__img" />
+              <picture>
+                <source
+                media="(min-width: 1200px)"
+                srcset="./images/command/img4_L-@1x.webp 1x, ./images/command/img4_L-@2x.webp 2x"
+                type="image/webp">
+              </source>
+                <source
+                media="(min-width: 1200px)"
+                srcset="./images/command/img4_L-@1x.jpg 1x, ./images/command/img4_L-@2x.jpg 2x"
+                type="image/jpg">
+              </source>
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/command/img4_M-@1x.webp 1x, ./images/command/img4_M-@2x.webp 2x"
+                type="image/webp">
+              </source>
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/command/img4_M-@1x.jpg 1x, ./images/command/img4_M-@2x.jpg 2x"
+                type="image/jpg">
+              </source>
+              <source
+                media="(min-width: 480px)"
+                srcset="./images/command/img4_S-@1x.webp 1x, ./images/command/img4_S-@2x.webp 2x"
+                type="image/webp">
+              </source>
+              <source
+                media="(min-width: 480px)"
+                srcset="./images/command/img4_S-@1x.jpg 1x, ./images/command/img4_S-@2x.jpg 2x"
+                type="image/jpg">
+              </source>
+               <img src="./images/command/img4_S-@1x.jpg" alt="фото" class="command__img" />
+              </picture>
               <div class="command__box">
                 <h3 class="command__caption">Михайло Єрмаков</h3> <p class="command__text">UI Designer</p>
                 <ul class="command-socials list">
@@ -211,34 +380,64 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <section class="clients">
         <div class="container">
           <h2 class="title">Постійні клієнти</h2>
           <ul class="clients__list list">
             <li class="clients__items"
-              ><a class="clients__link link" href="#" target="_blank" rel="noopener noreferrer nofollow"
-                ><svg class="clients__icon"><use href="./images/icons.svg#group1"></use></svg></a
+              ><a
+                class="clients__link link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                ><svg class="clients__icon">
+                  <use href="./images/icons.svg#group1"></use></svg></a
             ></li>
             <li class="clients__items"
-              ><a class="clients__link link" href="#" target="_blank" rel="noopener noreferrer nofollow"
-                ><svg class="clients__icon"><use href="./images/icons.svg#group2"></use></svg></a
+              ><a
+                class="clients__link link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                ><svg class="clients__icon">
+                  <use href="./images/icons.svg#group2"></use></svg></a
             ></li>
             <li class="clients__items"
-              ><a class="clients__link link" href="#" target="_blank" rel="noopener noreferrer nofollow"
-                ><svg class="clients__icon"><use href="./images/icons.svg#group3"></use></svg></a
+              ><a
+                class="clients__link link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                ><svg class="clients__icon">
+                  <use href="./images/icons.svg#group3"></use></svg></a
             ></li>
             <li class="clients__items"
-              ><a class="clients__link link" href="#" target="_blank" rel="noopener noreferrer nofollow"
-                ><svg class="clients__icon"><use href="./images/icons.svg#group4"></use></svg></a
+              ><a
+                class="clients__link link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                ><svg class="clients__icon">
+                  <use href="./images/icons.svg#group4"></use></svg></a
             ></li>
             <li class="clients__items"
-              ><a class="clients__link link" href="#" target="_blank" rel="noopener noreferrer nofollow"
-                ><svg class="clients__icon"><use href="./images/icons.svg#group5"></use></svg></a
+              ><a
+                class="clients__link link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                ><svg class="clients__icon">
+                  <use href="./images/icons.svg#group5"></use></svg></a
             ></li>
             <li class="clients__items"
-              ><a class="clients__link link" href="#" target="_blank" rel="noopener noreferrer nofollow"
-                ><svg class="clients__icon"><use href="./images/icons.svg#group6"></use></svg></a
+              ><a
+                class="clients__link link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                ><svg class="clients__icon">
+                  <use href="./images/icons.svg#group6"></use></svg></a
             ></li>
           </ul>
         </div>
@@ -247,62 +446,98 @@
     <footer class="footer">
       <div class="container footer-container">
         <div class="adress-tablet">
-        <div class="address">
-          <a href="./index.html" class="footer-logo"><span class="logo__web">Web</span>Studio</a>
-          <address class="address__col">
-            <ul class="address__list list">
-              <li class="address__items"
-                ><a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow" class="address__map">м. Київ, пр-т Лесі Украінки, 26</a></li
-              >
-              <li class="address__items"><a href="mailto:info@devstudio.com" class="address__connection">info@devstudio.com</a></li>
-              <li class="address__items"><a href="tel:+380961111111" class="address__connection">+38 096 111 11 11</a></li>
+          <div class="address">
+            <a href="./index.html" class="footer-logo"><span class="logo__web">Web</span>Studio</a>
+            <address class="address__col">
+              <ul class="address__list list">
+                <li class="address__items"
+                  ><a
+                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="address__map"
+                    >м. Київ, пр-т Лесі Украінки, 26</a
+                  ></li
+                >
+                <li class="address__items"
+                  ><a href="mailto:info@devstudio.com" class="address__connection"
+                    >info@devstudio.com</a
+                  ></li
+                >
+                <li class="address__items"
+                  ><a href="tel:+380961111111" class="address__connection">+38 096 111 11 11</a></li
+                >
+              </ul>
+            </address>
+          </div>
+          <div class="join">
+            <p class="join__title">Приєднуйтесь</p>
+            <ul class="join__socials list">
+              <li class="join__items"
+                ><a
+                  class="join__link link"
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  aria-label="instagram"
+                  ><svg class="join__icon" width="20" height="20">
+                    <use href="./images/icons.svg#instagram"></use></svg></a
+              ></li>
+              <li class="join__items"
+                ><a
+                  class="join__link link"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  aria-label="twitter"
+                  ><svg class="join__icon" width="20" height="20">
+                    <use href="./images/icons.svg#twitter"></use></svg></a
+              ></li>
+              <li class="join__items"
+                ><a
+                  class="join__link link"
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  aria-label="facebook"
+                  ><svg class="join__icon" width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use></svg></a
+              ></li>
+              <li class="join__items"
+                ><a
+                  class="join__link link"
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  aria-label="linkedin"
+                  ><svg class="join__icon" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use></svg></a
+              ></li>
             </ul>
-          </address>
-        </div>
-        <div class="join">
-          <p class="join__title">Приєднуйтесь</p>
-          <ul class="join__socials list">
-            <li class="join__items"
-              ><a class="join__link link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer nofollow" aria-label="instagram"
-                ><svg class="join__icon" width="20" height="20"><use href="./images/icons.svg#instagram"></use></svg></a
-            ></li>
-            <li class="join__items"
-              ><a class="join__link link" href="https://twitter.com" target="_blank" rel="noopener noreferrer nofollow" aria-label="twitter"
-                ><svg class="join__icon" width="20" height="20"><use href="./images/icons.svg#twitter"></use></svg></a
-            ></li>
-            <li class="join__items"
-              ><a class="join__link link" href="https://facebook.com" target="_blank" rel="noopener noreferrer nofollow" aria-label="facebook"
-                ><svg class="join__icon" width="20" height="20"><use href="./images/icons.svg#facebook"></use></svg></a
-            ></li>
-            <li class="join__items"
-              ><a class="join__link link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer nofollow" aria-label="linkedin"
-                ><svg class="join__icon" width="20" height="20"><use href="./images/icons.svg#linkedin"></use></svg></a
-            ></li>
-          </ul>
-        </div>
+          </div>
         </div>
         <div class="subscribe">
           <form class="subscribe__form">
             <p class="subscribe__title">Підпишіться на розсилку</p>
             <div class="subscribe__box">
-           <label class="subscribe__label">
-              <input 
-              class="subscribe__imput"
-              type="email"
-              name="email"
-              placeholder="Введіть текст">
-           </label>
-           <button class="subscribe__btn" type="submit">Підписатися
-            <svg class="subscribe__send" width="24" height="24">
-    <use href="./images/icons.svg#send"></use>
-            </svg></button>
+              <label class="subscribe__label">
+                <input
+                  class="subscribe__imput"
+                  type="email"
+                  name="email"
+                  placeholder="Введіть текст"
+                />
+              </label>
+              <button class="subscribe__btn" type="submit"
+                >Підписатися
+                <svg class="subscribe__send" width="24" height="24">
+                  <use href="./images/icons.svg#send"></use></svg></button>
             </div>
-
           </form>
         </div>
       </div>
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__btm" type="button" data-modal-close>
           <svg class="modal__cross" width="11" height="11">
@@ -353,7 +588,64 @@
           <button class="register-form__btn" type="submit">Відправити</button>
         </form>
       </div>
-    </div> -->
+    </div>
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+ <svg class="menu-btn__icons" width="40" height="40">
+        <use href="./images/icons.svg#close"></use>
+      </svg>
+      </button>
+
+      <ul class="menu-nav list">
+        <li class="menu-nav__items">
+          <a href="./index.html" class="menu-nav__link menu-nav__link_current">Студія</a></li>
+        <li class="menu-nav__items">
+          <a href="./portfolio.html" class="menu-nav__link">Портфоліо</a></li>
+        <li class="menu-nav__items">
+          <a href="#" class="menu-nav__link">Контакти</a></li>
+      </ul>
+      <ul class="menu-connection list">
+        <li class="menu-connection__items_tel">
+          <a href="tel:+380961111111" class="menu-connection__link_tel">+38 096 111 11 11</a></li>
+        <li class="menu-connection__items_mail">
+          <a href="mailto:info@devstudio.com" class="menu-connection__link_mail">info@devstudio.com</a></li>
+      </ul>
+      <ul class="menu-socials list">
+        <li class="menu-socials__items">
+          <a href="https://www.instagram.com"
+             target="_blank"
+             rel="noopener noreferrer nofollow"
+             aria-label="instagram" 
+             class="menu-socials__link">Instagram</a></li>
+        <li class="menu-socials__items">
+          <a href="https://twitter.com"
+             target="_blank"
+             rel="noopener noreferrer nofollow"
+             aria-label="twitter" 
+             class="menu-socials__link">Twitter</a></li>
+        <li class="menu-socials__items">
+          <a href="https://facebook.com"
+             target="_blank"
+             rel="noopener noreferrer nofollow"
+             aria-label="facebook" 
+             class="menu-socials__link">Facebook</a></li>
+        <li class="menu-socials__items">
+          <a href="https://linkedin.com"
+             target="_blank"
+             rel="noopener noreferrer nofollow"
+             aria-label="linkedin"
+             class="menu-socials__link">LinkedIn</a></li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
