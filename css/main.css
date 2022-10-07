@@ -1093,7 +1093,6 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     max-width: 327px;
-    height: 91px;
     margin-bottom: 40px;
     gap: 8px;
   }
