@@ -11,6 +11,7 @@ opacity: 1;
 transition: opacity 250ms var(--timing-function),
 visibility 250ms var(--timing-function);
 
+overflow: scroll;
 }
 .backdrop.is-hidden{
     opacity: 0;
@@ -23,9 +24,9 @@ visibility 250ms var(--timing-function);
 }
 .modal{
      position: absolute;
-     top: 50%;
+     top: 20px;
      left: 50%;
-     transform: translate(-50%, -50%) scale(1);
+     transform: translate(-50%) scale(1);
      
     width: 260px;
     min-height: 609px;
@@ -43,8 +44,10 @@ visibility 250ms var(--timing-function);
         }
 
     @media screen and(min-width:1200px) {
+    top: 50%;
     width: 528px;
     min-height: 581px;
+    transform: translate(-50%, -50%) scale(1);
     }
 }
 .modal__btm{

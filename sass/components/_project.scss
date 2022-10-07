@@ -49,7 +49,9 @@ overflow: hidden;
     color: var(--primary-wite-color);
 }
 .project__link{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     text-decoration: none;
     transition: box-shadow 250ms var(--timing-function);
 
@@ -74,9 +76,7 @@ overflow: hidden;
         border-left-color: var(--portfolio-line);
 
         &_wide{
-        @media screen and(min-width:768px) and (max-width:1199px) {
-        padding: 20px 24px 56px;
-        }
+       flex-grow: 1;
         }
  
 }
